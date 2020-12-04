@@ -11,4 +11,4 @@ A book store server-side files
     - Set your secret key (ex: JWT_TOKEN=...). Generate via https://passwordsgenerator.net/
 2. Run locally
     - Install nodemon globally `npm i -g nodemon`
-    - run `nodemon` in the terminal
+    - run `nodemon` in the terminal.
