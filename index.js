@@ -14,7 +14,10 @@ app.use(cors())
 app.use(USERSROUTE, require('./routes/userRegister'))
 app.use(USERSROUTE, require('./routes/userLogin'))
 app.use(USERSROUTE, require('./routes/isTokenValid'))
+
 app.use(BOOKSSROUTE, require('./routes/bookCreate'))
+app.use(BOOKSSROUTE, require('./routes/bookGet'))
+app.use(BOOKSSROUTE, require('./routes/bookGetById'))
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
