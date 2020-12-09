@@ -5,7 +5,7 @@ const auth = require('../middleware/auth')
 
 router.post('/create', auth, async (req, res) => {
   try {
-    const { image, title, author, price } = req.body
+    const { image, title, author, preface, price } = req.body
 
     // Fallback - if front-end validation fails
     if (!image || !title || !author || !price) {
@@ -16,6 +16,7 @@ router.post('/create', auth, async (req, res) => {
       image,
       title,
       author,
+      preface,
       price,
     })
 

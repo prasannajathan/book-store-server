@@ -1,4 +1,4 @@
 module.exports = {
-  USERSROUTE: '/users',
-  BOOKSSROUTE: '/books',
+  USERSROUTE: '/api/users',
+  BOOKSSROUTE: '/api/books',
 }
